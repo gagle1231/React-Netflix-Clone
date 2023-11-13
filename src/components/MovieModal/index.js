@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './MovieModal.css';
+import useOnClickOutside from '../../api/hooks/useOnClickOutside';
 export default function MovieMoal({backdrop_path, title, overview, name, release_date, first_air_date, vote_average, setModalOpen}) {
-  return (
+    const ref = useRef();
+
+  useOnClickOutside(ref, () => {
+      setModalOpen(false);
+  });
+    return (
     <div className='presentation'>
         <div className='wrapper-modal'>
-            <div className='modal'>
+            <div className='modal' ref={ref}>
             <span onClick={() => setModalOpen(false)} className="modal-close">
                 X
             </span>

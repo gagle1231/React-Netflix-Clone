@@ -19,7 +19,7 @@ export default function SearchPage() {
     }, [debouncedSearchTerm]);
     const fetchSearchMovie = async (searchTerm) => {
         try{
-            const request = await axios.get(
+            const request = await axios.get( 
                 `/search/multi?include_adult=false&query=${searchTerm}`
             );
             console.log(request.data.results);

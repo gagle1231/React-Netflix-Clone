@@ -1,8 +1,6 @@
-import Banner from '../../api/components/Banner';
-import Nav from '../../api/components/Nav';
+import Banner from '../../components/Banner';
 import requests from '../../api/requests';
-import Row from '../../api/components/Row';
-import Footer from '../../api/components/Footer';
+import Row from '../../components/Row';
 function App() {
   return (
     <div className="App">
