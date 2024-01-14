@@ -1,7 +1,8 @@
 # React-Netflix-Clone
 > 리액트로 넷플릭스 클론 코딩
 
-![](images/header.png)
+![image](https://github.com/gagle1231/React-Netflix-Clone/assets/88420412/9d923db1-f81e-42b4-939d-0d9930a5e02e)
+
 
 ## 설치 방법
 
