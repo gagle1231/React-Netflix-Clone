@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+const fetchUrl = ''
 const Row = ({isLargeRow, title, id, fetchUrl}) => {
     const [movies, setMovies] = useState([]);
     const [modalOpen, setModalOpen] = useState(false);
@@ -71,12 +72,9 @@ const Row = ({isLargeRow, title, id, fetchUrl}) => {
                     ))}
                 </div>
             </Swiper>
-        {
-        modalOpen && (
-            <MovieModal {...movieSelected} setModalOpen={setModalOpen}>
-            </MovieModal>
-        )
-    }
+            {modalOpen && (
+        <MovieModal {...movieSelected} setModalOpen={setModalOpen} />
+      )}
     </section>
   );
 
